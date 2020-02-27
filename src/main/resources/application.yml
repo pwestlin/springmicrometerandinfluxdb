@@ -1,0 +1,9 @@
+spring.application.name: springmicrometerandinfluxdb
+
+management:
+  endpoints.web.exposure.include: '*'
+  endpoint.metrics.enabled: true
+  metrics.export.influx:
+    db: springmicrometerandinfluxdb
+    step: 5s
+    uri: http://localhost:8086

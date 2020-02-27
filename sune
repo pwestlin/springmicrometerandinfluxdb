@@ -1,0 +1,1346 @@
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+-api (n)
+No dependencies
+
+-runtime (n)
++--- org.springframework.boot:spring-boot-starter-webflux (n)
++--- org.springframework.boot:spring-boot-starter-actuator (n)
++--- com.fasterxml.jackson.module:jackson-module-kotlin (n)
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (n)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61 (n)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor (n)
++--- io.micrometer:micrometer-core (n)
+\--- io.micrometer:micrometer-registry-influx (n)
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+api - API dependencies for compilation 'main' (target  (jvm)). (n)
+No dependencies
+
+apiDependenciesMetadata
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+bootArchives - Configuration for Spring Boot archive artifacts.
+No dependencies
+
+compileClasspath - Compile classpath for compilation 'main' (target  (jvm)).
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
+\--- io.micrometer:micrometer-registry-influx -> 1.3.2
+     +--- io.micrometer:micrometer-core:1.3.2 (*)
+     \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
+
+compileOnly - Compile only dependencies for compilation 'main' (target  (jvm)). (n)
+No dependencies
+
+compileOnlyDependenciesMetadata
+No dependencies
+
+default - Configuration for default artifacts.
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.yaml:snakeyaml:1.25
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
+\--- io.micrometer:micrometer-registry-influx -> 1.3.2
+     +--- io.micrometer:micrometer-core:1.3.2 (*)
+     \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
+
+implementation - Implementation only dependencies for compilation 'main' (target  (jvm)). (n)
++--- org.springframework.boot:spring-boot-starter-webflux (n)
++--- org.springframework.boot:spring-boot-starter-actuator (n)
++--- com.fasterxml.jackson.module:jackson-module-kotlin (n)
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (n)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61 (n)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor (n)
++--- io.micrometer:micrometer-core (n)
+\--- io.micrometer:micrometer-registry-influx (n)
+
+implementationDependenciesMetadata
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
+\--- io.micrometer:micrometer-registry-influx -> 1.3.2
+     +--- io.micrometer:micrometer-core:1.3.2 (*)
+     \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
+
+kotlinCompilerClasspath
+\--- org.jetbrains.kotlin:kotlin-compiler-embeddable:1.3.61
+     +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+     |    \--- org.jetbrains:annotations:13.0
+     +--- org.jetbrains.kotlin:kotlin-script-runtime:1.3.61
+     +--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+     +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:1.3.61
+     \--- org.jetbrains.intellij.deps:trove4j:1.0.20181211
+
+kotlinCompilerPluginClasspath
++--- org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.3.61
+|    |    +--- org.jetbrains.kotlin:kotlin-scripting-common:1.3.61
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    |    |    |    \--- org.jetbrains:annotations:13.0
+|    |    |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1 -> 1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-scripting-jvm:1.3.61
+|    |    |    +--- org.jetbrains.kotlin:kotlin-script-runtime:1.3.61
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-scripting-common:1.3.61 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1 -> 1.3.3
+|    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+\--- org.jetbrains.kotlin:kotlin-allopen:1.3.61
+     +--- org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.3.61
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+     |    \--- org.jetbrains.kotlin:kotlin-native-utils:1.3.61
+     |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+     |         \--- org.jetbrains.kotlin:kotlin-util-io:1.3.61
+     |              \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+     +--- org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.3.61
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+     \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+
+kotlinNativeCompilerPluginClasspath
+No dependencies
+
+kotlinScriptDef - Script filename extensions discovery classpath configuration
+No dependencies
+
+kotlinScriptDefExtensions
+No dependencies
+
+runtimeClasspath - Runtime classpath of compilation 'main' (target  (jvm)).
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.yaml:snakeyaml:1.25
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
+\--- io.micrometer:micrometer-registry-influx -> 1.3.2
+     +--- io.micrometer:micrometer-core:1.3.2 (*)
+     \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for compilation 'main' (target  (jvm)). (n)
+No dependencies
+
+runtimeOnlyDependenciesMetadata
+No dependencies
+
+sourceArtifacts (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testApi - API dependencies for compilation 'test' (target  (jvm)). (n)
+No dependencies
+
+testApiDependenciesMetadata
+No dependencies
+
+testCompileClasspath - Compile classpath for compilation 'test' (target  (jvm)).
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
++--- io.micrometer:micrometer-registry-influx -> 1.3.2
+|    +--- io.micrometer:micrometer-core:1.3.2 (*)
+|    \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-test -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-test:2.2.4.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-test:2.2.4.RELEASE (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    +--- com.jayway.jsonpath:json-path:2.4.0
+|    |    +--- net.minidev:json-smart:2.3
+|    |    |    \--- net.minidev:accessors-smart:1.2
+|    |    |         \--- org.ow2.asm:asm:5.0.4
+|    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+|    |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+|    +--- org.junit.jupiter:junit-jupiter:5.5.2
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.5.2
+|    |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+|    |    |    +--- org.opentest4j:opentest4j:1.2.0
+|    |    |    \--- org.junit.platform:junit-platform-commons:1.5.2
+|    |    |         \--- org.apiguardian:apiguardian-api:1.1.0
+|    |    \--- org.junit.jupiter:junit-jupiter-params:5.5.2
+|    |         +--- org.apiguardian:apiguardian-api:1.1.0
+|    |         \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+|    +--- org.mockito:mockito-junit-jupiter:3.1.0
+|    |    \--- org.mockito:mockito-core:3.1.0
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.10.6
+|    |         +--- net.bytebuddy:byte-buddy-agent:1.9.10 -> 1.10.6
+|    |         \--- org.objenesis:objenesis:2.6
+|    +--- org.assertj:assertj-core:3.13.2
+|    +--- org.hamcrest:hamcrest:2.1
+|    +--- org.mockito:mockito-core:3.1.0 (*)
+|    +--- org.skyscreamer:jsonassert:1.5.0
+|    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+|    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-test:5.2.3.RELEASE
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    \--- org.xmlunit:xmlunit-core:2.6.3
+\--- io.projectreactor:reactor-test -> 3.3.2.RELEASE
+     \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+
+testCompileOnly - Compile only dependencies for compilation 'test' (target  (jvm)). (n)
+No dependencies
+
+testCompileOnlyDependenciesMetadata
+No dependencies
+
+testImplementation - Implementation only dependencies for compilation 'test' (target  (jvm)). (n)
++--- org.springframework.boot:spring-boot-starter-test (n)
+\--- io.projectreactor:reactor-test (n)
+
+testImplementationDependenciesMetadata
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
++--- io.micrometer:micrometer-registry-influx -> 1.3.2
+|    +--- io.micrometer:micrometer-core:1.3.2 (*)
+|    \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-test -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-test:2.2.4.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-test:2.2.4.RELEASE (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    +--- com.jayway.jsonpath:json-path:2.4.0
+|    |    +--- net.minidev:json-smart:2.3
+|    |    |    \--- net.minidev:accessors-smart:1.2
+|    |    |         \--- org.ow2.asm:asm:5.0.4
+|    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+|    |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+|    +--- org.junit.jupiter:junit-jupiter:5.5.2
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.5.2
+|    |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+|    |    |    +--- org.opentest4j:opentest4j:1.2.0
+|    |    |    \--- org.junit.platform:junit-platform-commons:1.5.2
+|    |    |         \--- org.apiguardian:apiguardian-api:1.1.0
+|    |    \--- org.junit.jupiter:junit-jupiter-params:5.5.2
+|    |         +--- org.apiguardian:apiguardian-api:1.1.0
+|    |         \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+|    +--- org.mockito:mockito-junit-jupiter:3.1.0
+|    |    \--- org.mockito:mockito-core:3.1.0
+|    |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.10.6
+|    |         +--- net.bytebuddy:byte-buddy-agent:1.9.10 -> 1.10.6
+|    |         \--- org.objenesis:objenesis:2.6
+|    +--- org.assertj:assertj-core:3.13.2
+|    +--- org.hamcrest:hamcrest:2.1
+|    +--- org.mockito:mockito-core:3.1.0 (*)
+|    +--- org.skyscreamer:jsonassert:1.5.0
+|    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+|    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-test:5.2.3.RELEASE
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    \--- org.xmlunit:xmlunit-core:2.6.3
+\--- io.projectreactor:reactor-test -> 3.3.2.RELEASE
+     \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+
+testKotlinScriptDef - Script filename extensions discovery classpath configuration
+No dependencies
+
+testKotlinScriptDefExtensions
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of compilation 'test' (target  (jvm)).
++--- org.springframework.boot:spring-boot-starter-webflux -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:5.2.3.RELEASE
+|    |    |    |    \--- org.springframework:spring-jcl:5.2.3.RELEASE
+|    |    |    \--- org.springframework:spring-context:5.2.3.RELEASE
+|    |    |         +--- org.springframework:spring-aop:5.2.3.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:5.2.3.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    |         \--- org.springframework:spring-expression:5.2.3.RELEASE
+|    |    |              \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.2.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    |    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    |    \--- org.slf4j:jul-to-slf4j:1.7.30
+|    |    |         \--- org.slf4j:slf4j-api:1.7.30
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    \--- org.yaml:snakeyaml:1.25
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.2
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:2.2.4.RELEASE
+|    |    +--- io.projectreactor.netty:reactor-netty:0.9.4.RELEASE
+|    |    |    +--- io.netty:netty-codec-http:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final
+|    |    |    |    |    \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-resolver:4.1.45.Final
+|    |    |    |    |         \--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-handler:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-codec-http2:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-handler:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler:4.1.44.Final -> 4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-handler-proxy:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-codec-socks:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    |    \--- io.netty:netty-codec:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-codec-http:4.1.45.Final (*)
+|    |    |    +--- io.netty:netty-transport-native-epoll:4.1.44.Final -> 4.1.45.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    |    \--- io.netty:netty-transport-native-unix-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.45.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.45.Final (*)
+|    |    |    |         \--- io.netty:netty-transport:4.1.45.Final (*)
+|    |    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- org.glassfish:jakarta.el:3.0.3
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.2
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-webflux:5.2.3.RELEASE
+|    |    +--- org.springframework:spring-beans:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.3.RELEASE (*)
+|    |    \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+|    \--- org.synchronoss.cloud:nio-multipart-parser:1.1.0
+|         +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
+|         \--- org.synchronoss.cloud:nio-stream-storage:1.1.3
+|              \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-actuator -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-actuator:2.2.4.RELEASE
+|    |    |    +--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    |    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    |    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    |    +--- org.springframework:spring-context:5.2.3.RELEASE (*)
+|    |    \--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2 (*)
+|    \--- io.micrometer:micrometer-core:1.3.2
+|         +--- org.hdrhistogram:HdrHistogram:2.1.11
+|         \--- org.latencyutils:LatencyUtils:2.0.3
++--- com.fasterxml.jackson.module:jackson-module-kotlin -> 2.10.2
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.10.2 (*)
+|    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.2
+|    \--- org.jetbrains.kotlin:kotlin-reflect:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+|              +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|              \--- org.jetbrains:annotations:13.0
++--- org.jetbrains.kotlin:kotlin-reflect:1.3.61 (*)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
++--- org.jetbrains.kotlinx:kotlinx-coroutines-reactor -> 1.3.3
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+|    +--- io.projectreactor:reactor-core:3.2.5.RELEASE -> 3.3.2.RELEASE (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.3.3
+|         +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 (*)
+|         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3 (*)
+|         \--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
++--- io.micrometer:micrometer-core -> 1.3.2 (*)
++--- io.micrometer:micrometer-registry-influx -> 1.3.2
+|    +--- io.micrometer:micrometer-core:1.3.2 (*)
+|    \--- org.slf4j:slf4j-api:1.7.28 -> 1.7.30
++--- org.springframework.boot:spring-boot-starter-test -> 2.2.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-test:2.2.4.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.4.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-test:2.2.4.RELEASE (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.4.RELEASE (*)
+|    +--- com.jayway.jsonpath:json-path:2.4.0
+|    |    +--- net.minidev:json-smart:2.3
+|    |    |    \--- net.minidev:accessors-smart:1.2
+|    |    |         \--- org.ow2.asm:asm:5.0.4
+|    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.30
+|    +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+|    |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+|    +--- org.junit.jupiter:junit-jupiter:5.5.2
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.5.2
+|    |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+|    |    |    +--- org.opentest4j:opentest4j:1.2.0
+|    |    |    \--- org.junit.platform:junit-platform-commons:1.5.2
+|    |    |         \--- org.apiguardian:apiguardian-api:1.1.0
+|    |    +--- org.junit.jupiter:junit-jupiter-params:5.5.2
+|    |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+|    |    |    \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+|    |    \--- org.junit.jupiter:junit-jupiter-engine:5.5.2
+|    |         +--- org.apiguardian:apiguardian-api:1.1.0
+|    |         +--- org.junit.platform:junit-platform-engine:1.5.2
+|    |         |    +--- org.apiguardian:apiguardian-api:1.1.0
+|    |         |    +--- org.opentest4j:opentest4j:1.2.0
+|    |         |    \--- org.junit.platform:junit-platform-commons:1.5.2 (*)
+|    |         \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+|    +--- org.mockito:mockito-junit-jupiter:3.1.0
+|    |    +--- org.mockito:mockito-core:3.1.0
+|    |    |    +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.10.6
+|    |    |    +--- net.bytebuddy:byte-buddy-agent:1.9.10 -> 1.10.6
+|    |    |    \--- org.objenesis:objenesis:2.6
+|    |    \--- org.junit.jupiter:junit-jupiter-api:5.4.2 -> 5.5.2 (*)
+|    +--- org.assertj:assertj-core:3.13.2
+|    +--- org.hamcrest:hamcrest:2.1
+|    +--- org.mockito:mockito-core:3.1.0 (*)
+|    +--- org.skyscreamer:jsonassert:1.5.0
+|    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+|    +--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    +--- org.springframework:spring-test:5.2.3.RELEASE
+|    |    \--- org.springframework:spring-core:5.2.3.RELEASE (*)
+|    \--- org.xmlunit:xmlunit-core:2.6.3
+\--- io.projectreactor:reactor-test -> 3.3.2.RELEASE
+     \--- io.projectreactor:reactor-core:3.3.2.RELEASE (*)
+
+testRuntimeOnly - Runtime only dependencies for compilation 'test' (target  (jvm)). (n)
+No dependencies
+
+testRuntimeOnlyDependenciesMetadata
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
